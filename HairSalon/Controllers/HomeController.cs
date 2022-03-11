@@ -1,15 +1,25 @@
 using Microsoft.AspNetCore.Mvc;
+using HairSalon.Models;
+using System.Linq;
+using System.Collections.Generic;
 
-namespace BestRestaurants.Controllers
+namespace HairSalon.Controllers
 {
-    public class HomeController : Controller
+  public class HomeController : Controller
+  {
+
+    private readonly HairSalonContext _db;
+    public HomeController(HairSalonContext db)
     {
-
-      [HttpGet("/")]
-      public ActionResult Index()
-      {
-        return View();
-      }
-
+      _db = db;
     }
+
+    [HttpGet("/")]
+    public ActionResult Index()
+    {
+      List<Stylist> model = _db.Stylists.ToList();
+      return View(model);
+    }
+
+  }
 }
