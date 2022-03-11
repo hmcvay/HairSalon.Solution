@@ -7,22 +7,28 @@
   <div class="home-title">
     <p>Eau Claire's Salon</p>
   </div>
-  
+
 </div>
 
 @model HairSalon.Models.Stylist
 
-<h2>Edit</h2>
+<div class="parent">
+  <div class="page-content">
+    <h2>Edit</h2>
 
-<h4>Edit this Stylist: @Html.DisplayFor(model => model.Name)</h4>
+    <h4>Edit this Stylist: @Html.DisplayFor(model => model.Name)</h4>
 
-@using (Html.BeginForm())
-{
-  @Html.HiddenFor(model => model.StylistId)
+    @using (Html.BeginForm())
+    {
+      @Html.HiddenFor(model => model.StylistId)
 
-  @Html.LabelFor(model => model.Name)
-  @Html.EditorFor(model => model.Name)
+      @Html.LabelFor(model => model.Name)
+      @Html.EditorFor(model => model.Name)
 
-  <input type="submit" value="Save" />
-}
-<p>@Html.ActionLink("Back to stylists", "Index")</p>
+      <input type="submit" value="Save" />
+    }
+    <p>@Html.ActionLink("Back to stylists", "Index")</p>
+  </div>
+</div>
+
+

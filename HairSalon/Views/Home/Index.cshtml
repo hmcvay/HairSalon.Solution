@@ -8,11 +8,13 @@
   </div>
   
 </div>
-<div class="home-content">
-  <h2 class="sub-title">Stylist/Client Directory</h2>
-  @if (Model.Count > 0)
-  {
-    <p>@Html.ActionLink("See all your Clients.", "Index", "Clients")</p>
-  }
-  <p>@Html.ActionLink("See all your Stylists.", "Index", "Stylists")</p>
+<div class="parent">
+  <div class="page-content">
+    <h2 class="sub-title">Stylist/Client Directory</h2>
+    @if (Model.Count > 0)
+    {
+      <p>@Html.ActionLink("See all your Clients.", "Index", "Clients")</p>
+    }
+    <p>@Html.ActionLink("See all your Stylists.", "Index", "Stylists")</p>
+  </div>
 </div>

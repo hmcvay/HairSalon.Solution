@@ -1,5 +1,5 @@
 body {
-  margin: 5%;
+  margin: 8%;
   background-color: #fff0d9;
 }
 
@@ -7,31 +7,35 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 60px;
 }
-
-/* .header-logo {
-  justify-content: center;
-} */
 
 .home-title {
   font-family:serif;
   font-weight: bold;
-  line-height: 85px;
-  border: 2px dotted blue;
+  line-height: 95px;
+  border: 2px dotted #61AAF4;
   border-radius: 50%;
-  width: 275px;
-  height: 275px;
-  color: #ff0d06;
+  width: 325px;
+  height: 325px;
+  color: #F6441E;
   text-align: center;
-  font-size: 65pt;
+  font-size: 78pt;
 }
 
-.home-content {
-  margin-top: 20px;
-  font-size: 16pt;
+.page-content {
+  border: 1px solid #F6441E;
+  background-color: white;
+  border-radius: 15px;
+  width: 400px;
+  height: auto;
+  text-align: center;
 }
 
 .sub-title {
+  color: #61AAF4;
   margin-top: 10px;
   font-size: 25pt;
+  font-family: serif;
+  font-weight: bold;
 }
