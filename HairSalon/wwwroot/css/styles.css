@@ -3,7 +3,31 @@ body {
   background-color: #fff0d9;
 }
 
+.parent {
+  display: flex;
+}
+
+/* .header-logo {
+  justify-content: center;
+} */
+
 .home-title {
+  justify-content: center;
+  border: 2px dotted #ff0d06;
+  border-radius: 50%;
+  width: 270px;
+  height: 270px;
   color: #ff0d06;
   text-align: center;
+  font-size: 50pt;
+}
+
+.home-content {
+  margin-top: 20px;
+  font-size: 16pt;
+}
+
+.sub-title {
+  margin-top: 10px;
+  font-size: 25pt;
 }
