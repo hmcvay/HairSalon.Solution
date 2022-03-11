@@ -23,12 +23,12 @@ namespace HairSalon.Controllers
 
     public ActionResult Create()
     {
-      viewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
+      ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
       return View();
     }
 
     [HttpPost]
-    public ACtionResult Create(Client Client)
+    public ActionResult Create(Client Client)
     {
       _db.Clients.Add(Client);
       _db.SaveChanges();

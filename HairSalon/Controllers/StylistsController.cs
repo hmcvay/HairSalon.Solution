@@ -29,7 +29,7 @@ namespace HairSalon.Controllers
     [HttpPost]
     public ActionResult Create(Stylist Stylist)
     {
-      _db.Cuisines.Add(Stylist);
+      _db.Stylists.Add(Stylist);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
