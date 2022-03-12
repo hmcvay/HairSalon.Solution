@@ -58,3 +58,20 @@ a {
 .bigger-info {
   font-size: 18pt;
 }
+
+img {
+  width: 200px;
+  height: auto;
+}
+
+#home-images {
+  display: flex;
+}
+
+#croissant {
+  justify-content: flex-start;
+}
+
+#scissors {
+  justify-content: flex-end;
+}
