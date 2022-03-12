@@ -21,12 +21,12 @@
       <h3>You don't have any ☹</h3>
     } 
 
-    <ul>
+    <div class="list-results">
       @foreach(Stylist stylist in Model)
       {
-        <li>@Html.ActionLink($"{stylist.Name}", "Details", new { id = stylist.StylistId })</li>
+        <p>@Html.ActionLink($"{stylist.Name}", "Details", new { id = stylist.StylistId })</p>
       }
-    </ul>
+    </div>
 
     <p>@Html.ActionLink("Add a stylist", "Create")</p>
     <p>@Html.ActionLink("Home", "Index", "Home")</p>

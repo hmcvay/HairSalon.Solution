@@ -21,12 +21,12 @@
       <h3>Your stylists have no clients ☹</h3>
     }
 
-    <ul>
+    <div class="list-results">
       @foreach(Client client in Model)
       {
-        <li>@Html.ActionLink($"{client.Name}", "Details", new { id = client.ClientId }) | @client.Stylist.Name</li>
+        <p>@Html.ActionLink($"{client.Name}", "Details", new { id = client.ClientId }) | @client.Stylist.Name</p>
       }
-    </ul>
+    </div>
 
     <p>@Html.ActionLink("Add a new client", "Create")</p>
     <p>@Html.ActionLink("Home", "Index", "Home")</p>

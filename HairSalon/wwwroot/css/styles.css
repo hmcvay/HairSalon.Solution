@@ -38,9 +38,15 @@ body {
   color: #61AAF4;
   margin-top: 10px;
   font-size: 30pt;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 a {
   color:#F6441E;
+}
+
+.list-results {
+  line-height: 25px;
+  font-size: 20pt;
+  margin-bottom: 20px;
 }
