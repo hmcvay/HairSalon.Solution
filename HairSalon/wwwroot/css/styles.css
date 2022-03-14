@@ -24,6 +24,7 @@ body {
 }
 
 .page-content {
+  color: #81868c;
   font-family: monospace;
   border: 1px solid #F6441E;
   background-color: white;
@@ -35,7 +36,7 @@ body {
 }
 
 .sub-title {
-  color: #61AAF4;
+  color: #61aaf4;
   margin-top: 10px;
   font-size: 30pt;
   margin-bottom: 20px;
@@ -43,6 +44,11 @@ body {
 
 a {
   color:#F6441E;
+}
+
+.link :hover {
+  color: #81868c !important;
+  text-decoration: none;
 }
 
 .btn-default {
@@ -64,25 +70,6 @@ img {
   height: auto;
 }
 
-/* #home-images1 {
-  display: flex;
-  justify-content: flex-start;
-  float: left;
-}
-
-#home-images2 {
-  display: flex;
-  justify-content: flex-end;
-  float: right;
-}
-
-#home-images3 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  float: left;
-} */
-
 #croissant1 {
   position: absolute;
   left: 20%;
@@ -98,11 +85,11 @@ img {
 #croissant2 {
   position: absolute;
   right: 20%;
-  top: 70%;
+  top: 75%;
 }
 
 #scissors2 {
   position: absolute;
   left: 20%;
-  top: 70%;
+  top: 75%;
 }

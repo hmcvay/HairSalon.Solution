@@ -17,9 +17,9 @@
     <h2 class="sub-title">Client Details</h2>
     <hr />
     <p class="bigger-info">@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</p>
-    <p>@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId })</p>
-    <p>@Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId })</p>
-    <p>@Html.ActionLink("Back to client list", "Index")</p>
+    <p class="link">@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId })</p>
+    <p class="link">@Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId })</p>
+    <p class="link">@Html.ActionLink("Back to client list", "Index")</p>
   </div>
 </div>
 

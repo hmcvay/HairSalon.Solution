@@ -24,11 +24,11 @@
     <div class="list-results">
       @foreach(Stylist stylist in Model)
       {
-        <p>@Html.ActionLink($"{stylist.Name}", "Details", new { id = stylist.StylistId })</p>
+        <p class="link">@Html.ActionLink($"{stylist.Name}", "Details", new { id = stylist.StylistId })</p>
       }
     </div>
 
-    <p>@Html.ActionLink("Add a stylist", "Create")</p>
-    <p>@Html.ActionLink("Home", "Index", "Home")</p>
+    <p class="link">@Html.ActionLink("Add a stylist", "Create")</p>
+    <p class="link">@Html.ActionLink("Home", "Index", "Home")</p>
   </div>
 </div>
