@@ -3,6 +3,8 @@ body {
   background-color: #fff0d9;
 }
 
+
+
 .parent {
   display: flex;
   align-items: center;
@@ -49,6 +51,10 @@ a {
 .link :hover {
   color: #81868c !important;
   text-decoration: none;
+}
+
+select {
+  border:#61AAF4;
 }
 
 .btn-default {
