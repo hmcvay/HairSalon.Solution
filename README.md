@@ -2,7 +2,7 @@
 
 #### By Hayley McVay
 
-<br>
+<img src="readMeImage.png" width="auto">
 
 ## Description
 
