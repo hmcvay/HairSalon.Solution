@@ -64,14 +64,45 @@ img {
   height: auto;
 }
 
-#home-images {
+/* #home-images1 {
   display: flex;
-}
-
-#croissant {
   justify-content: flex-start;
+  float: left;
 }
 
-#scissors {
+#home-images2 {
+  display: flex;
   justify-content: flex-end;
+  float: right;
+}
+
+#home-images3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  float: left;
+} */
+
+#croissant1 {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+}
+
+#scissors1 {
+  position: absolute;
+  right: 20%;
+  top: 10%;
+}
+
+#croissant2 {
+  position: absolute;
+  right: 20%;
+  top: 70%;
+}
+
+#scissors2 {
+  position: absolute;
+  left: 20%;
+  top: 70%;
 }
