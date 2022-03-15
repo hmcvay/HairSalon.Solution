@@ -10,6 +10,7 @@
   
 </div>
 
+@using HairSalon.Models
 @model HairSalon.Models.Stylist
 
 <div class="parent">
@@ -17,6 +18,12 @@
     <h2 class="sub-title">Stylists Details</h2>
     <hr />
     <p class="bigger-info">@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<p>
+    
+    @foreach(Client client in Model.Clients)
+    {
+      <p class="link">@Html.ActionLink($"{client.Name}","Details", "Clients", new{id = client.ClientId})</p>
+    }
+    <br>
     <p class="link">@Html.ActionLink("Edit stylist", "Edit", new { id = Model.StylistId })</p>
     <p class="link">@Html.ActionLink("Delete stylist", "Delete", new { id = Model.StylistId })</p>
     <p class="link">@Html.ActionLink("Back to stylists", "Index")</p>

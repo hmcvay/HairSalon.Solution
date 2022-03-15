@@ -46,7 +46,7 @@ Web App for Eau Claire's Salon to keep track of their business's stylists and th
 
 ## Known Bugs
 
-* No known issues
+* Currently, empty strings and numbers are accepted input for new Stylists and Clients.
 
 <br>
 
